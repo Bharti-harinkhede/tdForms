@@ -80,7 +80,7 @@
 
         <div class="form-group">
           <label [for]="mod.contactMode" *ngFor="let mod of modCon; trackBy : trackById" class="p-3" >
-            <input type="radio" name="modOfContact" ngModel [value]="mod.contactMode">
+            <input type="radio" name="modOfContact" ngModel [value]="mod.contactMode" [id]="mod.id">
 
             {{mod.contactMode}}
           </label>
