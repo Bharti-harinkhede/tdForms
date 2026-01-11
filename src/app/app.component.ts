@@ -41,5 +41,10 @@ export class AppComponent {
  patchData(){
   this.signUpForm.form.patchValue(this.userDetails)
  }
+
+ trackById(index: number, item: any): number | string {
+  return item.id;
+}
+
 }
 
